@@ -907,6 +907,10 @@ iframe {
   margin: 40px auto;
 }
 
+.wrapper-usluge .container .section-usluge .section-usluge_item .itemActive .usluga {
+  background-color: white !important;
+}
+
 .wrapper-usluge .container .section-usluge .section-usluge_item .section-usluga {
   margin: 20px auto;
   padding: 4px;
@@ -1013,8 +1017,6 @@ iframe {
 }
 
 .wrapper-usluge .container .section-usluge .section-usluge_item .section-usluga .usluga .btn {
-  font-size: 41px;
-  background: white;
   border: none;
 }
 

@@ -4,7 +4,7 @@
 .itemActive{
     border-radius: 10px;
     box-shadow: 1px 1px 10px 1px black;
-
+    
 }
 
 
@@ -25,7 +25,12 @@
             margin: 40px auto;  
          
             .section-usluge_item{
-    
+                
+                .itemActive{
+                    .usluga{
+                        background-color: white !important;
+                    }
+                }
                 .section-usluga{        
                     margin: 20px auto;
                     padding: 4px;
@@ -38,7 +43,7 @@
                         border-radius: 10px;
                         background-color: hwb(0 98% 5%);
                         position: relative;
-            
+                        
                         &:hover{
                             background-color: white;
                             cursor: pointer;
@@ -104,8 +109,8 @@
                         }
             
                         .btn{
-                           font-size: 41px;
-                           background: white;
+                         // width: ;
+                          // background: white;
                            border: none;
                         
                             &:hover{

@@ -55,25 +55,26 @@ $(document).ready(function(){
 /*   Pritiskom na strelicu gore/dole se prosuruje/smanjuje tekst  */
 
     $('.js-toggle-usluga').click(function(){
-     var img = document.createElement("IMG");
-     img.src =  '../icon/strelicaGore.png';
-     var img2 = document.createElement("IMG");
-     img2.src =  '../icon/strelicaDole.png';
-
+      
         if(!$(this).parent().hasClass('active')){
             $(this).parent().addClass('active');
-            $(this).next().removeClass('no')
             $(this).parent().parent().addClass('itemActive');
-            $(this).html(img)
+
+            $(this).addClass('no');
+            $(this).next().removeClass('no')
+            $(this).next().next().removeClass('no')           
             $(this).prev().get(0).innerHTML="Prikazi manje"
             
         }else{
             $(this).parent().removeClass('active');
             $(this).parent().parent().removeClass('itemActive');
-            $(this).next().addClass('no')
-            $(this).html(img2)
-            $(this).prev().get(0).innerHTML="Prikazi vise"           
 
+            $(this).addClass('no') 
+            $(this).prev().removeClass('no')
+            $(this).next().addClass('no')
+            $(this).next().next().addClass('no')
+            $(this).prev().prev().get(0).innerHTML="Prikazi vise"           
+ 
         }
     })
 
