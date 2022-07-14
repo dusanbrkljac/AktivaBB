@@ -1017,6 +1017,8 @@ iframe {
 }
 
 .wrapper-usluge .container .section-usluge .section-usluge_item .section-usluga .usluga .btn {
+  max-width: 50px;
+  max-height: 50px;
   border: none;
 }
 
