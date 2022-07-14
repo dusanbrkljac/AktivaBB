@@ -13,12 +13,12 @@ $(document).ready(function(){
 
     setTimeout(() => {
       $('.js-action2').addClass('actionActive');
-    }, 7000);
+    }, 5000);
 
     setTimeout(() => {
       $('.js-action2').removeClass('actionActive');
 
-    }, 14000);
+    }, 10000);
 
 
     
