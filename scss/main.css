@@ -274,8 +274,8 @@ iframe {
 
 .actionActive {
   width: 100% !important;
-  -webkit-transition: 7s ease !important;
-  transition: 7s ease !important;
+  -webkit-transition: 5s ease !important;
+  transition: 5s ease !important;
 }
 
 .header {
@@ -331,9 +331,9 @@ iframe {
 .header .container .wrapper-header .action2 {
   width: 0%;
   height: 3px;
-  background-color: orange;
+  background-color: #ff7f00;
   position: absolute;
-  top: 70px;
+  top: 67px;
   right: 0;
   -webkit-transition: 7s ease;
   transition: 7s ease;
@@ -798,11 +798,18 @@ iframe {
   height: 120vh;
   max-height: 820px;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../images/sliderImageMob.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/sliderImageMob.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
+}
+
+.wrapper-image .imageMobile {
+  height: 100%;
+  background-repeat: no-repeat;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.wrapper-image .imageTablet {
+  display: none;
 }
 
 .wrapper-image .image-text {
@@ -846,10 +853,17 @@ iframe {
 }
 
 @media screen and (min-width: 600px) {
-  .wrapper-image {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../images/sliderImageTablet.jpg");
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/sliderImageTablet.jpg");
-    background-size: 100% 100%;
+  .wrapper-image .imageMobile {
+    display: none;
+  }
+  .wrapper-image .imageTablet {
+    height: 100%;
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+    display: block;
+  }
+  .wrapper-image .image-text {
+    top: 32%;
   }
   .wrapper-image .image-text .activity {
     padding: 50px 0px;
@@ -1205,7 +1219,7 @@ iframe {
   z-index: 8;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  border-top: 2px solid  #ff921def;
+  border-top: 2px solid #ff7f00;
 }
 
 .hamburger-mobile .hamburger-container {
