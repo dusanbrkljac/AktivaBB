@@ -1,0 +1,141 @@
+
+
+ // background: #88BDBC ;
+// background-color: #ff921def; orange neka
+
+.actionActive{
+    width: 100% !important;
+    transition: 7s ease !important;
+}
+
+.header{
+    background:linear-gradient(
+                     rgba(133, 131, 131, 0.4), 
+                     rgba(206, 235, 237, 0.5)
+                   ); 
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 70px;
+    @include flex(row, space-around, center,auto);
+
+    .container{
+
+        .wrapper-header{
+            @include flex(row, space-around, center,auto);
+         
+            
+         
+             .action{
+                 width: 0%;
+                 height: 3px;
+                 background-color: $orange;
+                 position: absolute;
+                 top: 0;
+                 left: 0;
+             }
+             .action2{
+                width: 0%;
+                height: 3px;
+                background-color: orange;
+                position: absolute;
+                top: 70px;
+                right: 0;
+                transition: 7s ease;
+            }
+         
+             .header-title{
+                 @include flex(column, center, center,auto);
+                .logo{
+                    color: $orange;
+                    font-size: 25px;
+                    font-weight: 700;
+                }
+                 div{
+                     display: flex;
+                     font-size: 10px;
+                 }   
+         
+             }
+         
+             .menuImage{
+         
+                 .closeIcon{
+                     display: none;
+                 }
+                 img{
+                     width: auto;
+                 }
+               
+             }
+         }
+    }
+}
+
+
+@media screen and (min-width: $laptop) {
+
+    .header{
+        height: 80px;
+        
+        .container{
+            .wrapper-header{
+
+                    .action2{            
+                        top: 80px;
+                    }
+
+                    .header-title{
+                        .logo{
+                            font-weight: 700; 
+                        }
+                    }
+            
+                    .menuImage{
+                        display: none;
+                    }
+            
+                    .menu{   
+                        display: block;
+                               
+                        ul{
+                            @include flex(row, auto, auto,auto); 
+                            
+                            li{
+                                a{
+                                    padding: 0px 10px;                          
+                                    color: black;
+                                    position: relative;
+                                
+                                    &:hover{
+                                        color: black; 
+                                        span{
+                                            width: 30px;
+                                            transition: 1s ease;
+                                        }
+                                                    
+                                    }
+                    
+                                    span{
+                                        width: 0px;
+                                        height: 2px;
+                                        background-color: black;
+                                        position: absolute;
+                                        top: 30px;
+                                        left: 10px;
+                                        transition: width 1s;           
+                                    } 
+                                } 
+                            }
+              
+                        }
+                    }
+                }
+
+        }
+    }
+    
+
+}
+

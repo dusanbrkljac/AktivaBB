@@ -1,0 +1,83 @@
+
+.wrapper-forma{
+    margin: 30px 0px;
+    
+    .container{
+
+        .items{
+            border-top: 2px solid rgb(229, 183, 91);
+            padding: 50px 0px;
+            
+            .wrapper-forma-forma{
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 30px;
+        
+                h3{
+                    font-size: 30px;
+                    text-align: center;
+                    padding-bottom: 10px;
+                }
+        
+                .form{   
+                    
+                    display: flex;
+                    flex-direction: column;
+
+                    input,textarea{
+                      margin: 5px 0px;
+                    //  border:  dashed gray;      
+                      padding: 10px;
+
+                      &:hover,
+                      &:active{
+                          border: 2px solid #ff7f00;
+                      }
+                    }
+                   
+                    .btn-posalji{
+                        max-width: 150px;
+                        padding: 15px;
+                        background-color: #ff7f00;
+                        border: none;
+                        color: white;
+                        margin: 10px auto;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: white;
+                            color: #ff7f00;
+                            border: 1px solid #ff7f00;
+                        }
+                    }
+                }     
+            }
+        
+            .wrapper-maps{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    
+}
+
+
+@media screen and (min-width: 768px) {
+.wrapper-forma{
+    .container{
+        .items{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .wrapper-forma-forma{
+                width: 40%;
+            }
+            .wrapper-maps{
+                width: 58%;
+            }
+           }
+       }
+   }
+}

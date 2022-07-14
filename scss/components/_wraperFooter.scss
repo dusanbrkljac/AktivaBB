@@ -1,0 +1,121 @@
+
+.footer{
+    border-top: 2px solid black;
+  
+
+    .footer-one{
+      //  background-color: #f1f1f1 ;
+        padding: 20px 0px;
+        background:#262c38;
+        color: #b5b9bf;
+
+        .container{
+            
+            .footer-item-one{
+                @include flex(column, auto, center,auto);
+                text-align: center;
+
+                >div{
+                    padding: 20px 0px;
+
+                    .title{
+                      //  font-size: 25px;
+                        color: white;
+                        padding-bottom: 10px;
+                    }
+                }
+
+
+                .single-2{
+                    .list{
+                        @include flex(column, auto, auto,auto);
+
+                        li{
+                            padding: 5px 0px;
+                            a{
+                                color: #b5b9bf;
+                            }
+                        
+                        }
+                    }
+                }
+                .single-3{
+                    
+                    .elements{
+                        @include flex(row, auto, center,auto);
+                        padding: 1px 0px;
+                        
+                        img{
+                            margin-right: 5px;
+                            width: auto;
+                        }
+                        p{
+                            a{
+                                color: #b5b9bf;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-two{
+        background-color: rgb(33, 35, 49);
+        color: #5e636c;
+        padding: 10px 0px;
+        .container{
+            .footer-down__items{
+                
+                .item-one{
+                    display: flex;
+                    padding-bottom: 5px;
+
+                    .first{
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: $tablet ){
+    .footer{
+     
+        .footer-one{
+            .container{
+                .footer-item-one{
+                    @include flex(row, space-between, baseline,auto);
+
+                    .logo{
+                        width: 50%;
+                    }
+                }
+            }
+            
+        }
+
+    }
+}
+
+@media only screen and (min-width: $mobile ){
+    .footer-two{
+        padding: 15px 0px;
+        .container{
+            .footer-down__items{
+                @include flex(row, end, auto,auto);
+        
+                .item-one{
+                    padding: 0px 15px 0px 0px;
+                    .first{
+                        padding: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+

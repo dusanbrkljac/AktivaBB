@@ -1,0 +1,184 @@
+
+//  zuta  background: #fcde67;
+//  svetlo crna   background: #222629;
+//   background: #D85C27; nara..
+//   background: #B6C48E; svetslo zele  
+// background-color: rgba(34,34,34,0.9);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body{ 
+    box-sizing: border-box;
+    position: relative;
+   
+}
+
+
+
+
+/* OVERFLOW postavljen na hide!  */
+
+.overflow{
+    overflow:  hidden;
+}
+
+
+
+
+// ? SVE USLUGE (OVO TREBA OBRISATI??!! stara verzija) 
+  /*
+.wrapper-service-all{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    //    background: rgba(34, 34, 34, 0.9);
+//    background-color:rgb(228, 217, 207);
+    color: black;
+    padding: 20px 30px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      //  justify-content: center;
+    }
+
+    @media screen and (min-width: 1024px) {          
+        width: 95%;
+        margin: 0px auto;
+    }
+
+    .wrapper-service_item{
+        display: flex;
+        flex-direction: column;
+        padding: 40px 30px;
+        margin: 20px auto;
+        //border: 1px solid black;
+        border-radius: 3%;
+        box-shadow: 0px 0px 2px 0.3px #f76f06;
+
+        @media screen and (min-width: 769px) {
+            width: 35%;
+        }
+        @media screen and (min-width: 1024px) {
+            width: 25%;
+        }
+    
+        .wrapper-service_item-icon{
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .wrapper-service_item_name{
+            text-align: center;
+        }
+        .wrapper-service_item_text{
+            text-align: center;
+            padding: 20px 0px;
+        }
+        .wrapper-service_ul{
+            @media screen and (min-width: 768px) {
+               padding-left: 50px;
+               
+                }
+
+            li{
+                list-style-type: none;
+                padding: 10px;
+            }
+        }
+        .btn{
+            width: 60%;
+            margin: 20px  auto;
+           // padding: 4px;
+           // background-color: #f76f06;
+            cursor: pointer;
+           // color: white;
+            padding: 10px;
+            border-radius: 12px;
+            font-weight: bold;
+
+            @media screen and (min-width: 768px) {
+                width: 30%;
+            }
+        }
+        .btn:hover{
+            background-color: #f76f06;
+            color: black;
+            transform: translate(3px, 4px);
+        }
+
+        // ovo je div koji se otvara pritiskom na "prikazi vise" 
+        // new-item se dodaje div- kkoju je u trenutku sakriven
+        .new-item{
+            background-color: rgba(34,34,34,1);
+            color: white;
+            position: absolute;
+            width: 80%;
+            left: 4%;
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 4%;
+
+            @media screen and (min-width: 420px) {
+                left: 6%;
+            }
+            @media screen and (min-width: 768px) {
+                width: 85%;
+                left: 5%;
+
+            }
+
+            .wrapper-service_item_name{
+                width: 50%;
+                margin: 0px auto;
+            }
+
+            .x{
+                position: absolute;
+                top: 12px;
+                right: 13px;
+                background-color: chocolate;
+                cursor: pointer;
+            }
+            .x:hover{
+                background-color: rgba(34,34,34,0.9);
+                color: white;
+                transform: translate(-3px, 4px);
+            }
+           
+            .nazad{
+                width: 40%;
+                margin: 5%;
+                margin-left: 30%;
+                background-color: chocolate;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+            .nazad:hover{
+                background-color: rgba(34,34,34,0.9);
+                color: white;
+                transform: translate(3px, 4px);
+            }
+            
+            
+        }
+
+    }
+    .line{
+        width: 100%;
+        border-bottom: 1px solid black;
+        display: none;
+      
+        @media screen and (min-width: 768px) {
+            display: none;
+            }
+    }
+}
+
+*/
+
