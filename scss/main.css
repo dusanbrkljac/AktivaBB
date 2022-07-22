@@ -700,7 +700,9 @@ iframe {
     -webkit-box-shadow: 1px 1px 10px 1px black;
             box-shadow: 1px 1px 10px 1px black;
     padding: 10px;
-    background: lightgrey;
+  }
+  .wrapper-changing .container .items .items-3 .item .item-desc > p {
+    padding: 2px 0px;
   }
 }
 
@@ -1259,6 +1261,24 @@ iframe {
 @media screen and (min-width: 999px) {
   .hamburger-mobile {
     display: none;
+  }
+}
+
+@media screen and (max-height: 435px) {
+  .hamburger-mobile {
+    font-size: 10px;
+  }
+  .hamburger-mobile .hamburger-container {
+    padding: 0px;
+  }
+  .hamburger-mobile .hamburger-container .mobile-menu {
+    padding: 10px 0px;
+  }
+  .hamburger-mobile .hamburger-container .mobile-menu .menu-item {
+    padding: 5px 0px;
+  }
+  .hamburger-mobile .hamburger-container .info .info-item {
+    padding: 2px 0px;
   }
 }
 /*# sourceMappingURL=main.css.map */

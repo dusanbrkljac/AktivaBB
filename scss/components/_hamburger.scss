@@ -64,3 +64,24 @@
     }
 
 }
+
+
+ @media screen and ( max-height: 435px) {
+    .hamburger-mobile{
+        font-size: 10px;
+        .hamburger-container{
+            padding: 0px;
+            .mobile-menu{
+                padding: 10px 0px;
+                .menu-item{
+                    padding: 5px 0px;
+                }   
+            }
+            .info{
+                .info-item{
+                    padding: 2px 0px;
+                }
+            }
+        }
+    }
+}

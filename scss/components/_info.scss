@@ -1,131 +1,3 @@
-   
-
-
-// .rotate{
-//    transform: rotateY(180deg) ;
-//    transition: 3s ease;
-// }
-
-
-//    .wrapper-info{
-//       margin: 40px 0px;
-//       .container{
-
-//          .info-title{
-//             text-align: center;
-//             font-size: 30px;
-//             text-shadow: 2px 1px orange;
-//             width: 80%;
-//             margin: 0px auto;
-//          }
-//          .items{
-          
-//             .item{
-            
-//                max-width: 350px;
-//                max-height: 350px;
-//                margin: 10px auto;
-//               &:hover{
-//                  cursor: pointer;
-//               }
-
-//                .image{
-//                   transition: 3s ease;
-//                   position: relative;
-//                  // filter: drop-shadow(2px 4px 6px black);
-                  
-
-//                   .item-image{
-   
-//                     filter: brightness(45%);
-//                     border-radius: 120px;
-//                   }
-//                   .image-title{
-//                      position: absolute;
-//                      width: 80%;
-//                      top: 30%;
-//                      left: 10%;
-//                      text-align: center;
-//                      color: white;
-//                      font-family: 'Spectral', serif;
-//                    //  font-size: 20px;
-//                   }
-//                }
-
-//                .drugaStrana{
-//                   background: linear-gradient(rgba(56, 70, 120, 0.7), rgba(168, 197, 242, 0.7));            
-//                   transition: 3s ease;
-
-//                   height: 300px;
-//                   border-radius: 120px;
-//                   border:1px solid black;
-
-//                   .input{
-//                      transition: 3s ease;
-//                      display: flex;
-//                      flex-direction: column;
-//                      justify-content: center;
-//                      align-items: center;
-//                      height: 100%;
-//                      text-align: center;
-//                      font-family: 'Edu QLD Beginner', cursive;
-//                      &>p{
-//                         padding: 10px 0px;
-//                         font-size: 20px;
-//                      }
-//                   }
-                  
-//                }
-              
-              
-
-//             }
-
-//          }
-//       }
-//    }
-
-
-
-// @media screen and (min-width: 789px) {
-
-//    .wrapper-info{
-
-//       .container{
-//          .items{
-//             display: flex;
-//             width: 100%;
-
-//             .item{
-//                padding-bottom: 0px;
-//                padding: 5px;
-//                width: 32%;
-
-//                .image{
-
-//                   .item-image{
-//                      height: 300px;
-//                   }
-//                }
-//                .drugaStrana{
-//                   height: 300px  ;
-//                }
-
-               
-
-//             }
-//          }
-//       }
-//    }
-
-// }
-
-
-
-
-
-
-///*****************************************//
 
 
 
@@ -276,7 +148,10 @@
                   width: 250px;
                   box-shadow: 1px 1px 10px 1px black;
                   padding: 10px;
-                  background: lightgrey;
+               //   background: lightgrey;
+                  >p{
+                     padding: 2px 0px;
+                  }
                }
                
             }
