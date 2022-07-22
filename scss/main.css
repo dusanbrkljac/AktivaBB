@@ -599,6 +599,10 @@ iframe {
   font-size: 20px;
 }
 
+.wrapper-changing .container .items .items-3 .item .item-desc > p {
+  padding: 2px 0px;
+}
+
 .wrapper-changing .container .items .items-3 .item .item-desc > p span {
   float: right;
   margin-left: 10px;
@@ -700,9 +704,6 @@ iframe {
     -webkit-box-shadow: 1px 1px 10px 1px black;
             box-shadow: 1px 1px 10px 1px black;
     padding: 10px;
-  }
-  .wrapper-changing .container .items .items-3 .item .item-desc > p {
-    padding: 2px 0px;
   }
 }
 
@@ -1041,10 +1042,6 @@ iframe {
   .wrapper-usluge .container .section-usluge .item2 {
     margin-top: 40px;
   }
-}
-
-.footer {
-  border-top: 2px solid black;
 }
 
 .footer .footer-one {

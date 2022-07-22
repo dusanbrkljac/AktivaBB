@@ -65,11 +65,11 @@
                     }             
                }
                .item-desc{
-                  padding: 20px 0px;
-                 
+                  padding: 20px 0px;        
                   font-size: 20px;
+                  
                   >p{
-                     
+                     padding: 2px 0px;
                      span{
                         float: right;
                         margin-left: 10px;
@@ -149,9 +149,7 @@
                   box-shadow: 1px 1px 10px 1px black;
                   padding: 10px;
                //   background: lightgrey;
-                  >p{
-                     padding: 2px 0px;
-                  }
+                  
                }
                
             }
