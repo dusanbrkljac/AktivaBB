@@ -35,15 +35,15 @@
                  top: 0;
                  left: 0;
              }
-             .action2{
-                width: 0%;
-                height: 3px;
-                background-color: $orange;
-                position: absolute;
-                top: 67px;
-                right: 0;
-                transition: 7s ease;
-            }
+            //  .action2{
+            //     width: 0%;
+            //     height: 3px;
+            //     background-color: $orange;
+            //     position: absolute;
+            //     top: 67px;
+            //     right: 0;
+            //     transition: 7s ease;
+            // }
          
              .header-title{
                  @include flex(column, center, center,auto);
@@ -60,13 +60,14 @@
              }
          
              .menuImage{
-         
+              
                  .closeIcon{
                      display: none;
                  }
-                 img{
-                     width: auto;
-                 }
+                //  img{
+                //     // width: auto;
+                //      max-width: 30px;    
+                // }
                
              }
          }
@@ -82,9 +83,9 @@
         .container{
             .wrapper-header{
 
-                    .action2{            
-                        top: 80px;
-                    }
+                    // .action2{            
+                    //     top: 80px;
+                    // }
 
                     .header-title{
                         .logo{

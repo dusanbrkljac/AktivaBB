@@ -3,22 +3,31 @@
 $(document).ready(function(){
 
 
-/* postepljeno pojavljivanje teksta  prilikom ocitavanje stranice  */
-    $('#naslov').hide().delay(5500).fadeIn('slow');
-    $('#naslov2').hide().delay(3500).fadeIn();
-    $('#naslov3').hide().delay(1500).fadeIn('slow');
+  /* postepljeno pojavljivanje teksta  prilikom ocitavanje stranice  */
+
+const show = () => {
+  $('#naslov').hide().delay(5500).fadeIn('slow');
+  $('#naslov2').hide().delay(3500).fadeIn();
+  $('#naslov3').hide().delay(1500).fadeIn('slow');
+
+  $('.js-action').addClass('actionActive');
+
+}
+
+show()
+
+    
 
  
-    $('.js-action').addClass('actionActive');
 
-    setTimeout(() => {
-      $('.js-action2').addClass('actionActive');
-    }, 5000);
+    // setTimeout(() => {
+    //   $('.js-action2').addClass('actionActive');
+    // }, 5000);
 
-    setTimeout(() => {
-      $('.js-action2').removeClass('actionActive');
+    // setTimeout(() => {
+    //   $('.js-action2').removeClass('actionActive');
 
-    }, 10000);
+    // }, 10000);
 
 
     
@@ -154,7 +163,7 @@ $(document).ready(function(){
            $(this).next().removeClass('btn-active')
            $(this).prev().removeClass('btn-active')
 
-            console.log(this)
+           // console.log(this)
         }else if($(this).hasClass('js-treci')) {
     
           const father =   $(this).parent().parent();     
@@ -171,7 +180,15 @@ $(document).ready(function(){
 
    
 
+    $(window).on("scroll",function(){
+      let scroll = $(window).scrollTop();
+      if(scroll > 848){
+        $('.js-footer-contact').removeClass('no')
+      }else{
+        $('.js-footer-contact').addClass('no')
 
+      }
+    })
 
 
 

@@ -46,9 +46,10 @@
                 align-items: center;
                 
                 img{
-                    width: auto;
+                    //width: auto;
                     height: auto;
                     margin-right: 5px;
+                    max-width: 25px;
                 }               
             }    
         }

@@ -5,12 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/main.css">
+
     <title >AKTIVA BB | Knjigovodstvena agencija</title>
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/app.js"  ></script>
+ 
     <meta
       name="description" 
       content="Knjigovodstvena agencija Aktiva BB iz Novog Knezevca, 
@@ -26,7 +23,8 @@
         <div class="wrapper-header">
         
             <div class="action js-action"></div>
-            <div class="action2 js-action2"></div>
+
+            <!-- <div class="action2 js-action2"></div> -->
 
 
             <div class="header-title">
@@ -39,8 +37,8 @@
                 </div>
             </div>
             <div class="menuImage js-menuImage ">
-                <img class="openIcon" src="icon/hamburgerMenu.png" alt="open hamburger">
-                <img class="closeIcon" src="icon/hamburgerClose.png" alt="close hamburger">     
+                <img class="openIcon" src="icon/hamburgerMenu.webp" alt="open hamburger">
+                <img class="closeIcon" src="icon/hamburgerClose.webp" alt="close hamburger">     
             </div>
 
             <div class="menu no">
@@ -58,7 +56,7 @@
     <!-- Hamburger meni-->
     <div class="hamburger-mobile ">
         <div class="hamburger-container"> 
-            <div class="mobile-menu">
+            <ul class="mobile-menu">
                 <li class=" menu-item">
                      <a class="link" href="#pocetna" >POCETNA </a>
                 </li>
@@ -71,22 +69,22 @@
                 <li class=" menu-item"> 
                     <a class="link" href="#kontakt">KONTAKT</a>
                 </li> 
-            </div>
+            </ul>
 
             <div class="info">
                 <div class="line"></div>
                 <div class="info-item">
-                    <img src="icon/workTimeMeni.png" alt="Time work">
+                    <img src="icon/workTimeMeni.webp" alt="Time work">
                     <p class="text"> Pon - Pet | 07:00 - 15:00 h </p>
                 </div> 
                 <div class="line"></div>
                 <div class="info-item">
-                    <img src="icon/phoneMeni.png" alt="Phone number">
+                    <img src="icon/phoneMeni.webp" alt="Phone number">
                     <p><a class="text" href="tel:+381621996705"> 062-555-555</a></p>
                 </div> 
                 <div class="line"></div>
                 <div class="info-item">
-                    <img src="icon/mailMeni.png" alt="e-mail address">
+                    <img src="icon/mailMeni.webp" alt="e-mail address">
                     <p><a class="text" href="mailto:dusan.nk@gmail.com">nesto@gmail.com</a> </p>
                 </div>
                 <div class="line"></div>                    
@@ -102,8 +100,8 @@
     <!--  Image Slider -->
 
     <div id="pocetna" class="wrapper-image" >
-        <img class="imageMobile" src="images/mobileSlider.jpg" alt="pozadina">
-        <img class="imageTablet" src="images/sliderImageTablet.jpg" alt="pozadina">
+        <img class="imageMobile" src="images/mobileSlider.webp" alt="pozadina">
+        <img class="imageTablet" src="images/sliderImageTablet.webp" alt="pozadina">
         <div class="image-text ">
             <h2 id="naslov" class="name">AKTIVA BB</h3>
             <h5 id="naslov2"  class="activity">Agencija za racunovodstvene i knjigovodstvene poslove</h5>
@@ -139,7 +137,7 @@
             <div class="section-usluga" >
                 <div class="usluga">
                     <div class="wrapper-service_item-icon">
-                         <img src="icon/icon3.png" alt="" srcset="">
+                         <img src="icon/icon3.webp" alt="" srcset="">
                     </div>
                     <h4 class="wrapper-service_item_name">Usluga 1</h4>
                     <p class="wrapper-service_item_text">Lorem ipsum dolor, sit amet consectetur
@@ -151,12 +149,12 @@
                          repudiandae.
                     </p>
                    <p class="opsirnije">Prikazi vise</p>    
-                    <button class="btn js-toggle-usluga">
-                         <img class="dole" src="icon/strelicaDole.png" alt=""> 
-                    </button>
-                    <button class="abc btn js-toggle-usluga no">
-                        <img class="gore eno" src="icon/strelicaGore.png" alt="">
-                    </button>
+                    <div class="btn js-toggle-usluga">
+                         <img class="dole" src="icon/strelicaDole.webp" alt=""> 
+                    </div>
+                    <div class="abc btn js-toggle-usluga no">
+                        <img class="gore eno" src="icon/strelicaGore.webp" alt="">
+                    </div>
             
                     <div  class="no  " >
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, cumque.</p>
@@ -171,7 +169,7 @@
             <div class="section-usluga" >
                 <div class="usluga ">
                     <div class="wrapper-service_item-icon">
-                    <img src="icon/icon2.png" alt="" srcset=""></div>
+                    <img src="icon/icon2.webp" alt="" srcset=""></div>
                     <h4 class="wrapper-service_item_name">Usluga 2</h4>
                     <p class="wrapper-service_item_text">Lorem ipsum dolor, sit amet consectetur
                        adipisicing elit. Aperiam, suscipit nobis quia
@@ -183,12 +181,12 @@
                     </p>
 
                     <p class="opsirnije">Prikazi vise</p>       
-                    <button class="btn js-toggle-usluga">
-                        <img class="dole" src="icon/strelicaDole.png" alt=""> 
-                   </button>
-                   <button class="abc btn js-toggle-usluga no">
-                       <img class="gore eno" src="icon/strelicaGore.png" alt="">
-                   </button>         
+                    <div class="btn js-toggle-usluga">
+                        <img class="dole" src="icon/strelicaDole.webp" alt=""> 
+                    </div>
+                   <div class="abc btn js-toggle-usluga no">
+                       <img class="gore eno" src="icon/strelicaGore.webp" alt="">
+                   </div>         
                     <div  class="no  " >
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, cumque.</p>
                         <ul>
@@ -219,7 +217,7 @@
             <div class="section-usluga" >
                 <div class="usluga ">
                     <div class="wrapper-service_item-icon">
-                        <img src="icon/icon3.png" alt="" srcset="">
+                        <img src="icon/icon3.webp" alt="" srcset="">
                     </div>
                     <h4 class="wrapper-service_item_name">Usluga 3333</h4>
                     <p class="wrapper-service_item_text">Lorem ipsum dolor, sit amet consectetur
@@ -231,12 +229,12 @@
                        repudiandae.
                     </p>
                     <p class="opsirnije">Prikazi vise</p>       
-                    <button class="btn js-toggle-usluga">
-                        <img class="dole" src="icon/strelicaDole.png" alt=""> 
-                   </button>
-                   <button class="abc btn js-toggle-usluga no">
-                       <img class="gore eno" src="icon/strelicaGore.png" alt="">
-                   </button>                    
+                    <div class="btn js-toggle-usluga">
+                        <img class="dole" src="icon/strelicaDole.webp" alt=""> 
+                    </div>
+                   <div class="abc btn js-toggle-usluga no">
+                       <img class="gore eno" src="icon/strelicaGore.webp" alt="">
+                   </div>                    
                     <div  class="no  " >
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, cumque.</p>
                         <ul>
@@ -256,7 +254,7 @@
             <div class="section-usluga" >
                 <div class="usluga ">
                     <div class="wrapper-service_item-icon">
-                        <img src="icon/icon4.png" alt="" srcset=""></div>
+                        <img src="icon/icon4.webp" alt="" srcset=""></div>
                     <h4 class="wrapper-service_item_name">Usluga 4</h4>
                     <p class="wrapper-service_item_text">Lorem ipsum dolor, sit amet consectetur
                        adipisicing elit. Aperiam, suscipit nobis quia
@@ -267,12 +265,13 @@
                        repudiandae.
                     </p>
                     <p class="opsirnije">Prikazi vise</p>       
-                    <button class="btn js-toggle-usluga">
-                        <img class="dole" src="icon/strelicaDole.png" alt=""> 
-                   </button>
-                   <button class="abc btn js-toggle-usluga no">
-                       <img class="gore eno" src="icon/strelicaGore.png" alt="">
-                   </button>                    
+                    <div class="btn js-toggle-usluga">
+                        <img class="dole" src="icon/strelicaDole.webp" alt=""> 
+                    </div>
+                   <div class="abc btn js-toggle-usluga no">
+                       <img class="gore eno" src="icon/strelicaGore.webp" alt="">
+                   </div> 
+
                     <div  class="no  " >
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, cumque.</p>
                         <ul>
@@ -286,7 +285,7 @@
             <div class="section-usluga" >
                 <div class="usluga ">
                     <div class="wrapper-service_item-icon">
-                        <img src="icon/icon5.png" alt="" srcset=""></div>
+                        <img src="icon/icon5.webp" alt="" srcset=""></div>
                     <h4 class="wrapper-service_item_name">Usluga 5</h4>
                     <p class="wrapper-service_item_text">Lorem ipsum dolor, sit amet consectetur
                        adipisicing elit. Aperiam, suscipit nobis quia
@@ -297,12 +296,12 @@
                        repudiandae.
                     </p>
                     <p class="opsirnije">Prikazi vise</p>      
-                    <button class="btn js-toggle-usluga">
-                        <img class="dole" src="icon/strelicaDole.png" alt=""> 
-                   </button>
-                   <button class="abc btn js-toggle-usluga no">
-                       <img class="gore eno" src="icon/strelicaGore.png" alt="">
-                   </button>                    
+                    <div class="btn js-toggle-usluga">
+                        <img class="dole" src="icon/strelicaDole.webp" alt=""> 
+                    </div>
+                   <div class="abc btn js-toggle-usluga no">
+                       <img class="gore eno" src="icon/strelicaGore.webp" alt="">
+                   </div>                    
                     <div  class="no  " >
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, cumque.</p>
                         <ul>
@@ -316,7 +315,7 @@
             <div class="section-usluga" >
                <div class="usluga ">
                    <div class="wrapper-service_item-icon">
-                       <img src="icon/icon3.png" alt="" srcset=""></div>
+                       <img src="icon/icon3.webp" alt="" srcset=""></div>
                    <h4 class="wrapper-service_item_name">Usluga 5</h4>
                    <p class="wrapper-service_item_text">Lorem ipsum dolor, sit amet consectetur
                       adipisicing elit. Aperiam, suscipit nobis quia
@@ -327,12 +326,12 @@
                       repudiandae.
                    </p>
                    <p class="opsirnije">Prikazi vise</p>      
-                   <button class="btn js-toggle-usluga">
-                    <img class="dole" src="icon/strelicaDole.png" alt=""> 
-                    </button>
-                    <button class="abc btn js-toggle-usluga no">
-                        <img class="gore eno" src="icon/strelicaGore.png" alt="">
-                    </button>                 
+                   <div class="btn js-toggle-usluga">
+                    <img class="dole" src="icon/strelicaDole.webp" alt=""> 
+                   </div>
+                    <div class="abc btn js-toggle-usluga no">
+                        <img class="gore eno" src="icon/strelicaGore.webp" alt="">
+                    </div>                 
                    <div  class="no  " >
                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, cumque.</p>
                        <ul>
@@ -361,7 +360,7 @@
             <div class="items">
 
                 <div class="wrapper-onama-img">
-                    <img src="images/about.jpg" alt="image-about">
+                    <img src="images/about.webp" alt="image-about">
                 </div>
 
                 <div  class="wrapper-onama-text">
@@ -414,7 +413,7 @@
                 <div class="item-title"> 
                     <h4 class="title">Kontakt</h4>
                     <div class="image" >
-                        <img src="images/infoPhone.jpg" alt="Radno vreme">
+                        <img src="images/infoPhone.webp" alt="Radno vreme">
                     </div>  
                 </div> 
                 <div class="item-desc">
@@ -430,7 +429,7 @@
                 <div class="item-title">
                     <h4 class="title">Radno vreme</h4>
                     <div class="image" >
-                        <img src="images/infoWorkTime.jpg" alt="Dolor Sit Amet">
+                        <img src="images/infoWorkTime.webp" alt="Dolor Sit Amet">
                     </div>               
                 </div>
 
@@ -451,7 +450,7 @@
                 <div class="item-title">
                     <h4 class="title">Adresa</h4>
                     <div class="image" >
-                        <img src="images/infoOffice.jpg" alt="Magna Aliqua">
+                        <img src="images/infoOffice.webp" alt="Magna Aliqua">
                     </div>         
                 </div>
                 <div class="item-desc">
@@ -543,15 +542,15 @@
                 <div class="single-3">
                     <h3 class="title">Kontakt info</h3>
                     <div class="elements">
-                        <img  src="icon/footerHome.png" alt="">
+                        <img  src="icon/footerHome.webp" alt="">
                         <p>Novi Knezevac</p>
                     </div>       
                     <div class="elements">
-                        <img src="icon/footerPhone.png" alt="">
+                        <img src="icon/footerPhone.webp" alt="">
                         <p><a href="tel:+381621996705"> 0621996705</a></p>
                     </div>  
                     <div class="elements">
-                        <img src="icon/footerEmail.png" alt="">
+                        <img src="icon/footerEmail.webp" alt="">
                         <p><a class="fEmail" href="mailto:dusan.nk@gmail.com">dusan@mgail.com</a> </p>
                     </div>                   
                 </div>
@@ -583,13 +582,18 @@
 
 
     <!--   !Footer contact-->
-    <!--    
-    <div class="wrapper-footer-contact">
-        <a href="tel: +381 66 6666 552"> <img src="images/tel.png" alt="">  </a>
-      
+       
+    <div class="footer-contact js-footer-contact no">
+        <a href="tel: +381 621996705"> 
+            <img src="icon/phoneMeni.webp" alt=""> 
+         </a>
     </div>
-   -->
+  
 
+
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="js/app.js"  ></script>
 </body>
 </html>
 

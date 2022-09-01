@@ -6,9 +6,10 @@
     .footer-one{
       //  background-color: #f1f1f1 ;
         padding: 20px 0px;
-        background:#262c38;
-        color: #b5b9bf;
-
+     //   background:#262c38;
+     //   color: #b5b9bf;
+        background-color: #1c2536;
+     color: white;
         .container{
             
             .footer-item-one{
@@ -20,7 +21,7 @@
 
                     .title{
                       //  font-size: 25px;
-                        color: white;
+                  //      color: white;
                         padding-bottom: 10px;
                     }
                 }
@@ -61,9 +62,11 @@
     }
 
     .footer-two{
-        background-color: rgb(33, 35, 49);
-        color: #5e636c;
-        padding: 10px 0px;
+      //  background-color: rgb(33, 35, 49);
+       // color: #5e636c;
+       background-color: #1c2536;
+
+       padding: 10px 0px;
         .container{
             .footer-down__items{
                 
@@ -119,3 +122,20 @@
     }
 }
 
+
+/// FOOTER PHONE
+
+.footer-contact{
+    width: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 5;
+}
+
+
+@media only screen and (min-width: $tablet ){
+   .footer-contact{
+       display: none;
+   }
+}
