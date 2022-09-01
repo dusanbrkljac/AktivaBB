@@ -38,23 +38,26 @@
                     .btn-posalji{
                         max-width: 150px;
                         padding: 15px;
-                        background-color: #ff7f00;
+                      //  background-color: #ff7f00;
                         border: none;
-                        color: white;
+                        color: black;
                         margin: 10px auto;
                         cursor: pointer;
+                        font-size: 18px;
                         &:hover{
-                            background-color: white;
-                            color: #ff7f00;
-                            border: 1px solid #ff7f00;
+                            background-color: #ff7f00;
+                          //  color: #ff7f00;
+                          //  border: 1px solid #ff7f00;
                         }
                     }
                 }     
             }
         
             .wrapper-maps{
+                // bila klassa  wrapper-maps
                 display: flex;
                 justify-content: center;
+
             }
         }
     }

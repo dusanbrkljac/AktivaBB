@@ -3,19 +3,20 @@
 
 .wrapper-image{
      height: 120vh;
-     max-height: 820px;
-     width: 100%;
+   //  max-height: 820px;
+   //  width: 100%;
+
     // rgba(0, 0, 0, .5)), url('../../images/sliderImageMob.jpg');
     // background-repeat: no-repeat;
     // background-size: cover;
     position: relative;
 
     .imageMobile{
-        height: 100%;
+       // height: 100%;
         background-repeat: no-repeat;
         filter: brightness(50%);
-        // background-size: cover;
-        // position: relative;
+        background-size: cover;
+      // position: relative;
     }
     .imageTablet{
         display: none;
@@ -55,7 +56,7 @@
             display: none;
         }
         .imageTablet{
-           height: 100%;
+          // height: 100%;
             // background-size: 100% 100%;
             filter: brightness(50%);
             display: block;

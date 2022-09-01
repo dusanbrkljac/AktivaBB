@@ -8,8 +8,8 @@
         padding: 20px 0px;
      //   background:#262c38;
      //   color: #b5b9bf;
-        background-color: #1c2536;
-     color: white;
+        background-color: black;
+        color: white;
         .container{
             
             .footer-item-one{
@@ -32,7 +32,7 @@
                         @include flex(column, auto, auto,auto);
 
                         li{
-                            padding: 5px 0px;
+                            padding: 7px 30px;
                             a{
                                 color: #b5b9bf;
                             }
@@ -64,7 +64,7 @@
     .footer-two{
       //  background-color: rgb(33, 35, 49);
        // color: #5e636c;
-       background-color: #1c2536;
+       background-color: wheat;
 
        padding: 10px 0px;
         .container{
@@ -126,7 +126,7 @@
 /// FOOTER PHONE
 
 .footer-contact{
-    width: 40px;
+    
     position: fixed;
     right: 20px;
     bottom: 20px;

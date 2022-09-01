@@ -174,13 +174,15 @@ body {
           box-sizing: border-box;
 }
 
-a {
+.aTag {
   cursor: pointer;
   text-decoration: none;
+  color: black;
 }
 
 img {
   width: 100%;
+  height: 100%;
 }
 
 iframe {
@@ -195,6 +197,10 @@ iframe {
   overflow: hidden;
 }
 
+html, body {
+  height: 100%;
+}
+
 @media screen and (max-width: 150px) {
   .fEmail {
     font-size: 5px;
@@ -205,17 +211,11 @@ iframe {
   .item-serve {
     font-size: 1px;
   }
-  a {
-    color: black;
-  }
 }
 
 @media only screen and (min-width: 150px) and (max-width: 250px) {
   .fEmail, p, a {
     font-size: 15px;
-  }
-  a {
-    color: black;
   }
   .item-serve {
     font-size: 4px;
@@ -226,9 +226,6 @@ iframe {
 }
 
 @media screen and (min-width: 250px) {
-  a {
-    color: black;
-  }
   h2 {
     font-size: 2.25rem;
     font-weight: 700;
@@ -737,17 +734,15 @@ iframe {
 .wrapper-forma .container .items .wrapper-forma-forma .form .btn-posalji {
   max-width: 150px;
   padding: 15px;
-  background-color: #ff7f00;
   border: none;
-  color: white;
+  color: black;
   margin: 10px auto;
   cursor: pointer;
+  font-size: 18px;
 }
 
 .wrapper-forma .container .items .wrapper-forma-forma .form .btn-posalji:hover {
-  background-color: white;
-  color: #ff7f00;
-  border: 1px solid #ff7f00;
+  background-color: #ff7f00;
 }
 
 .wrapper-forma .container .items .wrapper-maps {
@@ -781,16 +776,14 @@ iframe {
 
 .wrapper-image {
   height: 120vh;
-  max-height: 820px;
-  width: 100%;
   position: relative;
 }
 
 .wrapper-image .imageMobile {
-  height: 100%;
   background-repeat: no-repeat;
   -webkit-filter: brightness(50%);
           filter: brightness(50%);
+  background-size: cover;
 }
 
 .wrapper-image .imageTablet {
@@ -841,7 +834,6 @@ iframe {
     display: none;
   }
   .wrapper-image .imageTablet {
-    height: 100%;
     -webkit-filter: brightness(50%);
             filter: brightness(50%);
     display: block;
@@ -1027,7 +1019,7 @@ iframe {
 
 .footer .footer-one {
   padding: 20px 0px;
-  background-color: #1c2536;
+  background-color: black;
   color: white;
 }
 
@@ -1077,7 +1069,7 @@ iframe {
 }
 
 .footer .footer-one .container .footer-item-one .single-2 .list li {
-  padding: 5px 0px;
+  padding: 7px 30px;
 }
 
 .footer .footer-one .container .footer-item-one .single-2 .list li a {
@@ -1113,7 +1105,7 @@ iframe {
 }
 
 .footer .footer-two {
-  background-color: #1c2536;
+  background-color: wheat;
   padding: 10px 0px;
 }
 
@@ -1181,7 +1173,6 @@ iframe {
 }
 
 .footer-contact {
-  width: 40px;
   position: fixed;
   right: 20px;
   bottom: 20px;

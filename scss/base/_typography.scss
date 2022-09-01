@@ -12,9 +12,9 @@
 	.item-serve{
 		font-size: 1px;
 	}
-	a{
-		color: black;
-	}
+	// a{
+	// 	color: black;
+	// }
 	
 }
 
@@ -22,9 +22,9 @@
 	.fEmail,p,a{
 		font-size: 15px;
 	}
-	a{
-		color: black;
-	}
+	// a{
+	// 	color: black;
+	// }
 
 	.item-serve{
 		font-size: 4px;
@@ -39,10 +39,12 @@
 
 // From 250px 
 @media screen and (min-width: 250px) {
-
-	a{
-		color: black;
-	}
+	// .aTag{
+	// 	color: black;
+	// }
+	// // a{
+	// // 	color: black;
+	// // }
 	h2 {
 		font-size: 2.25rem;
 		font-weight: 700;

@@ -149,17 +149,23 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 }
-
-a {
+.aTag{
 	cursor: pointer;
 	text-decoration: none;
-	
+	color: black;
 }
+// a {
+// 	cursor: pointer;
+// 	text-decoration: none;
+	
+// }
 
 img {
 	width: 100%;
-	
+	//height: auto;
+	height: 100%;
 }
+
 iframe {
     width: 100%;
 }
@@ -175,3 +181,7 @@ iframe {
 	overflow: hidden;
 }
 
+html,body{
+	height: 100%;
+	
+}
