@@ -1,4 +1,83 @@
 
+
+
+
+
+/* mali deo za poziv */
+.samoPoziv{
+    background: linear-gradient(#222629);
+  //  background-color: #222629;
+    height: 250px;
+    color: #fef9f8;
+
+    .container{
+        .items{
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+
+            .call{
+                padding: 15px;
+                margin-top: 25px;
+                border-radius: 20px;
+                background-color: #ef9273;
+                color: #fef9f8;
+
+                &:hover{
+                    color: #ef9273;
+                    background-color: #fef9f8;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $tablet ) {
+
+.samoPoziv{
+    .container{
+        .items{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            .text{
+                width: 40%;
+                font-size: 30px;
+            }
+            .call{
+                margin-top: 0px;
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* wrapper kontakt forma i mapa */
+
+
 .wrapper-forma{
     margin: 30px 0px;
     

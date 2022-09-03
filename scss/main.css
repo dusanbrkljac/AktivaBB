@@ -498,8 +498,8 @@ html, body {
 }
 
 .wrapper-o-nama {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(133, 131, 131, 0.7)), to(rgba(206, 235, 237, 0.7)));
-  background: linear-gradient(rgba(133, 131, 131, 0.7), rgba(206, 235, 237, 0.7));
+  background-color: #fef9f8;
+  padding: 40px 0px;
 }
 
 .wrapper-o-nama .container .items {
@@ -522,6 +522,8 @@ html, body {
 }
 
 .wrapper-o-nama .container .items .wrapper-onama-img {
+  -webkit-box-shadow: 16px 16px 0px 0px #ef9273;
+          box-shadow: 16px 16px 0px 0px #ef9273;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
@@ -584,14 +586,13 @@ html, body {
 }
 
 .wrapper-changing {
-  background: #3A3D56;
+  background: #f2f2f2;
   padding: 20px 0px;
 }
 
 .wrapper-changing .container .items .text {
   text-align: center;
   padding: 40px 0px;
-  color: white;
 }
 
 .wrapper-changing .container .items .text p {
@@ -604,7 +605,7 @@ html, body {
 
 .wrapper-changing .container .items .items-3 .item {
   padding: 20px 0px;
-  background: #FFFFFF;
+  background: #c8d8e4;
   margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -713,7 +714,7 @@ html, body {
   }
   .wrapper-changing .container .items .items-3 .sadrzaj {
     height: 50px;
-    background-color: white;
+    background: #c8d8e4;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -762,12 +763,80 @@ html, body {
   }
   .wrapper-changing .container .items .items-3 .item .item-desc {
     width: 250px;
-    -webkit-box-shadow: 1px 1px 10px 1px black;
-            box-shadow: 1px 1px 10px 1px black;
+    -webkit-box-shadow: 7px 7px 0px 0px #2b6777;
+            box-shadow: 7px 7px 0px 0px #2b6777;
     padding: 10px;
+    background: #f2f2f2;
   }
 }
 
+/* mali deo za poziv */
+.samoPoziv {
+  background: -webkit-gradient(linear, left top, left bottom, from(#222629));
+  background: linear-gradient(#222629);
+  height: 250px;
+  color: #fef9f8;
+}
+
+.samoPoziv .container .items {
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.samoPoziv .container .items .call {
+  padding: 15px;
+  margin-top: 25px;
+  border-radius: 20px;
+  background-color: #ef9273;
+  color: #fef9f8;
+}
+
+.samoPoziv .container .items .call:hover {
+  color: #ef9273;
+  background-color: #fef9f8;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .samoPoziv .container .items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .samoPoziv .container .items .text {
+    width: 40%;
+    font-size: 30px;
+  }
+  .samoPoziv .container .items .call {
+    margin-top: 0px;
+    font-size: 25px;
+  }
+}
+
+/* wrapper kontakt forma i mapa */
 .wrapper-forma {
   margin: 30px 0px;
 }
@@ -917,6 +986,8 @@ html, body {
             filter: brightness(40%);
     display: block;
     max-height: 800px;
+    max-width: 2500px;
+    margin: auto;
   }
   .wrapper-image .image-text {
     top: 32%;
@@ -949,12 +1020,12 @@ html, body {
 }
 
 .itemActive {
-  -webkit-box-shadow: 0px 0px 7px 2px black;
-          box-shadow: 0px 0px 7px 2px black;
+  -webkit-box-shadow: 0px 0px 10px #bfbfbf;
+          box-shadow: 0px 0px 10px #bfbfbf;
 }
 
 .wrapper-usluge {
-  background-color: #ffffff;
+  background-color: #fef9f8;
   padding-top: 2rem;
 }
 
@@ -992,14 +1063,14 @@ html, body {
   -ms-flex-wrap: auto;
       flex-wrap: auto;
   padding: 20px;
-  -webkit-box-shadow: 0px 0px 10px #bfbfbf;
-          box-shadow: 0px 0px 10px #bfbfbf;
   position: relative;
 }
 
 .wrapper-usluge .containerService .section-usluge .section-usluge_item .section-usluga .usluga:hover {
   background-color: white;
   cursor: pointer;
+  -webkit-box-shadow: 0px 0px 10px #bfbfbf;
+          box-shadow: 0px 0px 10px #bfbfbf;
 }
 
 .wrapper-usluge .containerService .section-usluge .section-usluge_item .section-usluga .usluga:hover h4:before {

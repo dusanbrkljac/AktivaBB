@@ -17,7 +17,8 @@
 
 
 .wrapper-changing{
-   background:  #3A3D56;
+ //  background:  #3A3D56;
+   background: #f2f2f2;
    padding: 20px 0px;
 
    .container{
@@ -26,7 +27,7 @@
          .text{
             text-align: center;
             padding: 40px 0px;
-            color: white;
+         //   color: white;
             
             p{
                 padding: 18px 0px ;
@@ -43,7 +44,9 @@
      
            .item{          
               padding: 20px 0px;
-              background:  #FFFFFF;
+            //  background:  #FFFFFF;
+            background: #c8d8e4;
+
               margin-bottom: 40px;
               @include flex(column, auto, center,auto);     
                 
@@ -110,7 +113,9 @@
 
             .sadrzaj{
                height: 50px;
-               background-color: white;
+               background: #c8d8e4;
+
+            //   background-color: white;
                display: flex;
                    
                .btn-sadrzaj{
@@ -151,12 +156,12 @@
                }
                .item-desc{
                   width: 250px;
-                  box-shadow: 1px 1px 10px 1px black;
+                  box-shadow: 7px 7px 0px 0px #2b6777;
                   padding: 10px;
-               //   background: lightgrey;
+                  background: #f2f2f2;
                   
                }
-               
+
             }
          }
    

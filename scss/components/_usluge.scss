@@ -2,14 +2,14 @@
 
 
 .itemActive{
-  //  border-radius: 10px;
-    box-shadow: 0px 0px 7px 2px black;
-    
+    box-shadow: 0px 0px 10px rgb(191, 191, 191);
 }
 
 
 .wrapper-usluge{
-    background-color: #ffffff;
+  //  background-color: #ffffff;
+  background-color: #fef9f8;
+
     padding-top: 2rem;
     .containerService{
 
@@ -39,17 +39,19 @@
                     .usluga{
                         @include flex(column, auto, center,auto);
                         padding: 20px;
-                        box-shadow: 0px 0px 10px rgb(191, 191, 191);
+                    
+                        //    box-shadow: 0px 0px 10px rgb(191, 191, 191);    
+
+
                   //      box-shadow: 0px 0px 10px rgb(104, 104, 104);
-                    //
                       //  border-radius: 10px;
                       //  background-color: hwb(0 98% 5%);
                         position: relative;
-                        
+                      
                         &:hover{
                             background-color: white;
                             cursor: pointer;
-            
+                            box-shadow: 0px 0px 10px rgb(191, 191, 191);
             
                             h4:before{
                                 width: 30%;
