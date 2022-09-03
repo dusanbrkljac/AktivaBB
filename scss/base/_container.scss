@@ -1,7 +1,10 @@
 
-.container{
-    width: 90%;
-    margin: 0px auto;
+@media screen and (max-width: 576px) {
+
+    .container{
+        width: 90%;
+        margin: 0px auto;
+    }
 }
 
 
@@ -23,7 +26,51 @@
 @media screen and (min-width: 992px) {
 
     .container{
-        max-width: 992px;
+        max-width: 940px;
+        margin: 0px auto;
+    }
+}
+
+
+
+/* container Usluge */
+
+@media screen and (max-width: 576px) {
+
+    .containerService{
+        width: 90%;
+        margin: 0px auto;
+    }
+}
+
+
+@media screen and (min-width: 576px) {
+
+    .containerService{
+        max-width: 540px;
+        margin: 0px auto;
+    }
+}
+@media screen and (min-width: 768px) {
+
+    .containerService{
+        max-width: 768px;
+        margin: 0px auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .containerService{
+        max-width: 940px;
+        margin: 0px auto;
+    }
+}
+
+@media screen and (min-width: 1330px) {
+
+    .containerService{
+        max-width: 1250px;
         margin: 0px auto;
     }
 }

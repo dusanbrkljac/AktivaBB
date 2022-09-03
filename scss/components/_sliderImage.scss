@@ -2,7 +2,7 @@
 
 
 .wrapper-image{
-     height: 120vh;
+  //   height: 120vh;
    //  max-height: 820px;
    //  width: 100%;
 
@@ -14,7 +14,7 @@
     .imageMobile{
        // height: 100%;
         background-repeat: no-repeat;
-        filter: brightness(50%);
+        filter: brightness(40%);
         background-size: cover;
       // position: relative;
     }
@@ -58,8 +58,9 @@
         .imageTablet{
           // height: 100%;
             // background-size: 100% 100%;
-            filter: brightness(50%);
+            filter: brightness(40%);
             display: block;
+            max-height: 800px;
         }
         .image-text{
             top: 32%;
@@ -71,3 +72,40 @@
 
 }
 
+@media screen and (min-width: $large ) {
+ 
+    .wrapper-image {
+        
+        // .imageTablet{
+
+             // filter: brightness(50%);
+             // display: block;
+           //   max-height: 1000px;
+        // }
+        .image-text{
+            width: 60%;
+            top: 32%;
+            .name{
+                font-size: 3rem;
+            }
+            .activity{
+             //   padding: 50px 0px;
+                font-size: 2rem;
+            }
+            .city{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and ( min-height : 900px ) {
+    .wrapper-image {
+        
+        .imageTablet{
+
+             max-height: 1000px;
+        }
+        
+    }
+}

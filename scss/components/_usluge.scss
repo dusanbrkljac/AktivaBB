@@ -2,15 +2,16 @@
 
 
 .itemActive{
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px 1px black;
+  //  border-radius: 10px;
+    box-shadow: 0px 0px 7px 2px black;
     
 }
 
 
 .wrapper-usluge{
+    background-color: #ffffff;
     padding-top: 2rem;
-    .container{
+    .containerService{
 
         .usluge-opis{
             text-align: center;
@@ -19,10 +20,10 @@
                 padding: 20px 0px;
             }
         }
-
+                    
         .section-usluge{
-            @include flex(column, center, auto,auto);
-            margin: 40px auto;  
+         //   @include flex(column, center, auto,auto);
+          //  margin: 100px auto;  
          
             .section-usluge_item{
                 
@@ -32,16 +33,17 @@
                     }
                 }
                 .section-usluga{        
-                    margin: 20px auto;
+                    margin: 110px auto;
                     padding: 4px;
         
                     .usluga{
                         @include flex(column, auto, center,auto);
                         padding: 20px;
-                        box-shadow: 0px 0px 10px rgb(104, 104, 104);
-
-                        border-radius: 10px;
-                        background-color: hwb(0 98% 5%);
+                        box-shadow: 0px 0px 10px rgb(191, 191, 191);
+                  //      box-shadow: 0px 0px 10px rgb(104, 104, 104);
+                    //
+                      //  border-radius: 10px;
+                      //  background-color: hwb(0 98% 5%);
                         position: relative;
                         
                         &:hover{
@@ -100,8 +102,14 @@
                             border-bottom-color: rgb(71, 71, 76);
                         }
                         .wrapper-service_item-icon{
-                            max-width: 99px;
-                            max-height: 99px;
+                            //max-width: 99px;
+                            //max-height: 99px;
+                            margin-top: -100px;
+                            margin-bottom: 40px;
+
+                            img{
+                                border-radius: 100px;
+                            }
                         }
             
                         .wrapper-service_item_text{
@@ -133,23 +141,59 @@
 @media screen and (min-width: $tablet ) {
 
 .wrapper-usluge{
+    //background-color: rebeccapurple;
+    .containerService{
 
-    .container{
+        .usluge-opis{
+            text-align: center;
+            width: 70%;
+            margin: auto;
+            
+        }
         .section-usluge{
 
-            flex-direction: row;
-    
+            flex-direction: column;
+            margin: 80px 0px;
+
             .section-usluge_item{
-    
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
                 .section-usluga{
-                    margin: 20px 10px;
+                    margin: 50px auto;
+                    width: 45%;
                 }
             }
-            .item2{
-                margin-top: 40px;
-            }
-            
         }
     }  
 }  
+}
+
+
+@media screen and (min-width: $large ) {
+
+    .wrapper-usluge{
+     //   background-color: red;
+        .containerService{
+            .section-usluge{
+                display: flex;
+                flex-direction: row;
+                margin-top: 70px;
+                padding: 30px;
+                .section-usluge_item{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+
+                    .section-usluga{
+                        margin: 50px 10px;
+                        width: auto;
+                    }
+                }
+             
+                
+            }
+        }  
+    }  
 }

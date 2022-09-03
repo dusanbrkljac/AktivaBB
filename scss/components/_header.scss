@@ -7,12 +7,45 @@
     width: 100% !important;
     transition: 5s ease !important;
 }
+.addColorBlac{
+  //   background:linear-gradient(
+  //       rgba(133, 131, 131, 0.4), 
+  //       rgba(206, 235, 237, 0.5)
+  //     ); 
+    color: black !important;
+}
+.addBackColorBlac{
+    background: black !important;
+}
+
+
+// only acti2 class
+@media screen and (max-width: $laptop) {
 
 .header{
-    background:linear-gradient(
-                     rgba(133, 131, 131, 0.4), 
-                     rgba(206, 235, 237, 0.5)
-                   ); 
+    .container{
+        .wrapper-header{
+            .action2{
+                display: none;
+            }
+        }
+    }
+}
+
+}
+
+
+//MOBILE
+
+
+.header{
+    @media screen and (max-width: $laptop) {
+        background:linear-gradient(
+            rgba(133, 131, 131, 0.4), 
+            rgba(206, 235, 237, 0.5)
+          ); 
+    }
+   
     position: fixed;
     top: 0;
     z-index: 10;
@@ -21,6 +54,7 @@
     @include flex(row, space-around, center,auto);
 
     .container{
+        width: 90%;
 
         .wrapper-header{
             @include flex(row, space-around, center,auto);
@@ -35,16 +69,7 @@
                  top: 0;
                  left: 0;
              }
-            //  .action2{
-            //     width: 0%;
-            //     height: 3px;
-            //     background-color: $orange;
-            //     position: absolute;
-            //     top: 67px;
-            //     right: 0;
-            //     transition: 7s ease;
-            // }
-         
+                    
              .header-title{
                  @include flex(column, center, center,auto);
                 .logo{
@@ -60,7 +85,8 @@
              }
          
              .menuImage{
-              
+                min-width: 30px;
+
                  .closeIcon{
                      display: none;
                  }
@@ -83,56 +109,61 @@
         .container{
             .wrapper-header{
 
-                    // .action2{            
-                    //     top: 80px;
-                    // }
-
-                    .header-title{
-                        .logo{
-                            font-weight: 700; 
-                        }
-                    }
+                //   background-color: blanchedalmond;
+                  
+                .action2{
+                    width: 80%;
+                    height: 1px;
+                    margin: 0px auto;
+                    top: 78px;
+                    position: absolute;
+                    background: white;
+                }
+                .header-title{
+                    color: white;  
             
-                    .menuImage{
-                        display: none;
-                    }
+                }       
             
-                    .menu{   
-                        display: block;
+                .menuImage{
+                    display: none;
+                }
+            
+                .menu{   
+                    display: block;
                                
-                        ul{
-                            @include flex(row, auto, auto,auto); 
+                    ul{
+                        @include flex(row, auto, auto,auto); 
                             
-                            li{
-                                a{
-                                    padding: 0px 10px;                          
-                                    color: black;
-                                    position: relative;
+                        li{
+                            a{
+                                padding: 0px 10px;                          
+                                color: white;
+                                position: relative;
                                 
-                                    &:hover{
-                                        color: black; 
-                                        span{
-                                            width: 30px;
-                                            transition: 1s ease;
-                                        }
-                                                    
-                                    }
-                    
+                                &:hover{
+                                    color: black; 
                                     span{
-                                        width: 0px;
-                                        height: 2px;
-                                        background-color: black;
-                                        position: absolute;
-                                        top: 30px;
-                                        left: 10px;
-                                        transition: width 1s;           
-                                    } 
+                                        width: 30px;
+                                        transition: 1s ease;
+                                    }
+                                                    
+                                }
+                    
+                                span{
+                                    width: 0px;
+                                    height: 2px;
+                                    background-color: black;
+                                    position: absolute;
+                                    top: 30px;
+                                    left: 10px;
+                                    transition: width 1s;           
                                 } 
-                            }
-              
+                            } 
                         }
+              
                     }
                 }
+            }
 
         }
     }
@@ -140,3 +171,18 @@
 
 }
 
+@media screen and (min-width: $large) {
+
+    .header{
+        .container{
+            .wrapper-header{
+                    .header-title{
+                        .logo{
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    
+}

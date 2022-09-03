@@ -66,14 +66,19 @@
                }
                .item-desc{
                   padding: 20px 0px;        
-                  font-size: 20px;
+                 // font-size: 20px;
                   
                   >p{
                      padding: 2px 0px;
-                     span{
+                     .oclock{
                         float: right;
                         margin-left: 10px;
                      }
+
+                     /*novi deo */
+                     // a{
+                     //    float: right;
+                     // }
                   }
                }
                         

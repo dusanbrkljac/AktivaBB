@@ -3,18 +3,44 @@
 $(document).ready(function(){
 
 
+//menajnje header na< od laptop
+  $(window).on("scroll",function(){
+    let scroll = $(window).scrollTop();
+    if(scroll > 780){
+      console.log(scroll)
+      $('.header-title').addClass('addColorBlac')
+      $('.menu ul li a').addClass('addColorBlac')
+      $('.action2').addClass('addBackColorBlac')
+
+      //dodavanje slike za telefon (mobilna verzija)
+    $('.js-footer-contact').removeClass('no')
+
+    }else{
+      $('.header-title').removeClass('addColorBlac')
+      $('.menu ul li a').removeClass('addColorBlac')
+      $('.action2').removeClass('addBackColorBlac')
+
+      //dodavanje slike za telefon (mobilna verzija)
+      $('.js-footer-contact').addClass('no')
+
+    }
+  })
+  
+
   /* postepljeno pojavljivanje teksta  prilikom ocitavanje stranice  */
 
 const show = () => {
-  $('#naslov').hide().delay(5500).fadeIn('slow');
-  $('#naslov2').hide().delay(3500).fadeIn();
-  $('#naslov3').hide().delay(1500).fadeIn('slow');
+  $('#naslov').hide().delay(3000).fadeIn('slow');
+  $('#naslov2').hide().delay(2000).fadeIn();
+  $('#naslov3').hide().delay(1000).fadeIn('slow');
 
   $('.js-action').addClass('actionActive');
 
 }
 
 show()
+
+
 
     
 
@@ -180,15 +206,6 @@ show()
 
    
 
-    $(window).on("scroll",function(){
-      let scroll = $(window).scrollTop();
-      if(scroll > 848){
-        $('.js-footer-contact').removeClass('no')
-      }else{
-        $('.js-footer-contact').addClass('no')
-
-      }
-    })
 
 
 
