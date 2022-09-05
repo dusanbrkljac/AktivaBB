@@ -1,9 +1,36 @@
 
 
 
+/* strelice */
+
 .itemActive{
     box-shadow: 0px 0px 10px rgb(191, 191, 191);
 }
+
+.oneArrow{
+    transform:rotate(-45deg) translate(9px, 13px);
+    width: 25px;
+    height: 3px;
+    background-color: orange;
+}
+.twoArrow{
+    transform:rotate(45deg) ;
+    width: 25px;
+    height: 3px;;
+    background-color: orange;
+}
+    
+
+.oneAndTwoArrowsNew{
+    transform: rotate(180deg);
+    margin-top: 15px;
+ //   margin-left: 44px;
+}
+
+
+
+
+
 
 
 .wrapper-usluge{
@@ -40,7 +67,7 @@
                         @include flex(column, auto, center,auto);
                         padding: 20px;
                     
-                        //    box-shadow: 0px 0px 10px rgb(191, 191, 191);    
+                  //    box-shadow: 0px 0px 10px rgb(191, 191, 191);    
 
 
                   //      box-shadow: 0px 0px 10px rgb(104, 104, 104);
@@ -80,7 +107,8 @@
                             left: 0;
                             border-right-width: 5px;
                             border-top-width: 5px;
-                            border-top-color:#ff7f00;
+                            border-top-color:  $orange;
+                         //   border-top-color:#ff7f00;
                             
                         }
                         h4:after{
@@ -130,7 +158,26 @@
                                 cursor: pointer;
                               
                             }
+                            .oneAndTwoArrows{
+                                // margin-left: -17px;
+                                // margin-top: 19px;
+                                margin: 20px 0px;
+                            }
                         }
+                        .vidljivo{
+                            padding: 20px 0px;
+                            .strelica{
+                                float: right;
+                                .oneAndTwoArrowsNew{
+                                    margin: 20px 18px auto auto;
+                                }
+                                .smanjiText{
+                                    margin-top: 5px;
+                                }
+                               
+                            }
+
+                        }  
                         
                     }
             }

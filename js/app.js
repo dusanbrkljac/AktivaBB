@@ -7,7 +7,7 @@ $(document).ready(function(){
   $(window).on("scroll",function(){
     let scroll = $(window).scrollTop();
     if(scroll > 780){
-      console.log(scroll)
+
       $('.header-title').addClass('addColorBlac')
       $('.menu ul li a').addClass('addColorBlac')
       $('.action2').addClass('addBackColorBlac')
@@ -95,26 +95,47 @@ show()
             $(this).parent().addClass('active');
             $(this).parent().parent().addClass('itemActive');
 
-            $(this).addClass('no');
-            $(this).next().removeClass('no')
-            $(this).next().next().removeClass('no')           
+        //    $(this).addClass('no');
+       //     $(this).next().removeClass('no')
+            $(this).next().removeClass('no')           
             $(this).prev().get(0).innerHTML="Prikazi manje"
+
+            /*NOVO */ 
+          $(this).children('div').addClass('oneAndTwoArrowsNew');
+
             
         }else{
             $(this).parent().removeClass('active');
             $(this).parent().parent().removeClass('itemActive');
 
-            $(this).addClass('no') 
-            $(this).prev().removeClass('no')
-            $(this).next().addClass('no')
-            $(this).next().next().addClass('no')
-            $(this).prev().prev().get(0).innerHTML="Prikazi vise"           
- 
+           // $(this).addClass('no') 
+        //    $(this).prev().removeClass('no')
+         //   $(this).next().addClass('no')
+            // $(this).next().next().addClass('no')
+            // $(this).prev().prev().get(0).innerHTML="Prikazi vise"
+            
+            $(this).next().addClass('no')           
+            $(this).prev().get(0).innerHTML="Prikazi vise"
+
+            $(this).children('div').removeClass('oneAndTwoArrowsNew');
+
+  
         }
     })
 
 
+    $('.js-strelica').click(function(){
 
+      if($(this).parent().parent().hasClass('active')){
+        $(this).parent().parent().removeClass('active')
+        $(this).parent().parent().parent().removeClass('itemActive')
+
+        $(this).parent().prev().prev().get(0).innerHTML="Prikazi vise"
+        $(this).parent().prev().children('div').removeClass('oneAndTwoArrowsNew');
+        $(this).parent().addClass('no')
+
+      }
+    })
 
 
     // U odeljku za informacije slide se okrecu!

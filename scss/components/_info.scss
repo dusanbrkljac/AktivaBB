@@ -6,7 +6,7 @@
 
 .btn-active{
    background: white;
-   border-top: 5px solid #ff7f00 !important;
+   border-top: 5px solid $pinkOrange !important;
    color: #1E266D !important;
    font-weight: 700 !important;
 
@@ -44,8 +44,8 @@
      
            .item{          
               padding: 20px 0px;
-            //  background:  #FFFFFF;
-            background: #c8d8e4;
+            background-color: $pinkWhite;
+            //background: #c8d8e4;
 
               margin-bottom: 40px;
               @include flex(column, auto, center,auto);     
