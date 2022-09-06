@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&family=Spectral:ital,wght@1,200&display=swap");
 @media screen and (max-width: 576px) {
   .container {
     width: 90%;
@@ -1070,6 +1069,7 @@ html, body {
 .wrapper-usluge .containerService .section-usluge .section-usluge_item .section-usluga {
   margin: 110px auto;
   padding: 4px;
+  border: 1px solid #f0edeb;
 }
 
 .wrapper-usluge .containerService .section-usluge .section-usluge_item .section-usluga .usluga {
@@ -1315,7 +1315,7 @@ html, body {
 }
 
 .footer .footer-one .container .footer-item-one .single-2 .list li {
-  padding: 0px 30px 7px 30px;
+  padding-bottom: 15px;
 }
 
 .footer .footer-one .container .footer-item-one .single-2 .list li a {

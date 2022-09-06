@@ -41,23 +41,8 @@ const show = () => {
 show()
 
 
-
     
-
- 
-
-    // setTimeout(() => {
-    //   $('.js-action2').addClass('actionActive');
-    // }, 5000);
-
-    // setTimeout(() => {
-    //   $('.js-action2').removeClass('actionActive');
-
-    // }, 10000);
-
-
-    
-    /* funkcionisanje nav bar-a za mobilni uredjaj */
+    /*  nav bar-a  mobilni uredjaj */
     $('.js-menuImage').click(function(){
 
         if(!$(this).hasClass('active')){
@@ -87,39 +72,25 @@ show()
 
   
 
-/*   Pritiskom na strelicu gore/dole se prosuruje/smanjuje tekst  */
+/*   Pritiskom na strelicu gore/dole   */
 
     $('.js-toggle-usluga').click(function(){
       
         if(!$(this).parent().hasClass('active')){
             $(this).parent().addClass('active');
             $(this).parent().parent().addClass('itemActive');
-
-        //    $(this).addClass('no');
-       //     $(this).next().removeClass('no')
             $(this).next().removeClass('no')           
             $(this).prev().get(0).innerHTML="Prikazi manje"
 
-            /*NOVO */ 
           $(this).children('div').addClass('oneAndTwoArrowsNew');
-
-            
+    
         }else{
             $(this).parent().removeClass('active');
-            $(this).parent().parent().removeClass('itemActive');
-
-           // $(this).addClass('no') 
-        //    $(this).prev().removeClass('no')
-         //   $(this).next().addClass('no')
-            // $(this).next().next().addClass('no')
-            // $(this).prev().prev().get(0).innerHTML="Prikazi vise"
-            
+            $(this).parent().parent().removeClass('itemActive');            
             $(this).next().addClass('no')           
             $(this).prev().get(0).innerHTML="Prikazi vise"
 
-            $(this).children('div').removeClass('oneAndTwoArrowsNew');
-
-  
+            $(this).children('div').removeClass('oneAndTwoArrowsNew');  
         }
     })
 
@@ -136,52 +107,6 @@ show()
 
       }
     })
-
-
-    // U odeljku za informacije slide se okrecu!
-
-    // $('.js-info').hover(
-
-    //   function(){
-
-    //     if(!$(this).parent().hasClass('active')){
-    //       $(this).parent().addClass('active')
-    //       $('.image', this).addClass('rotate')
-    //       $('.drugaStrana',this).addClass('rotate')
-    //       $('div div',this).addClass('rotate');
-
-    //       setTimeout(() => {
-    //         $('.image',this).addClass('no')
-    //         $('.drugaStrana',this).removeClass('no')
-    //       }, 1000);
-
-    //     }     
-    //   },
-    
-
-    //   function(){
-
-    //     if($(this).parent().hasClass('active')){
-    //       $(this).parent().removeClass('active')
-    //       $('.image', this).removeClass('rotate')
-    //       $('.drugaStrana',this).removeClass('rotate')
-    //       $('div div',this).removeClass('rotate');
-
-    //       setTimeout(() => {
-    //         $('.image',this).removeClass('no')
-    //         $('.drugaStrana',this).addClass('no')
-    //       }, 1000);
-
-    //     }
-    //   }
-
-    // )
-
-
-
-
-
-
 
 
     // !Informacije

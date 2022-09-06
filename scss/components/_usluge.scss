@@ -16,7 +16,7 @@
 .twoArrow{
     transform:rotate(45deg) ;
     width: 25px;
-    height: 3px;;
+    height: 3px;
     background-color: orange;
 }
     
@@ -36,7 +36,7 @@
 .wrapper-usluge{
   //  background-color: #ffffff;
   background-color: #fef9f8;
-
+  $font-family: 'Cormorant', serif;
     padding-top: 2rem;
     .containerService{
 
@@ -62,7 +62,7 @@
                 .section-usluga{        
                     margin: 110px auto;
                     padding: 4px;
-        
+                    border:  1px solid #f0edeb; ;
                     .usluga{
                         @include flex(column, auto, center,auto);
                         padding: 20px;
